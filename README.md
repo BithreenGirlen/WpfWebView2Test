@@ -1,2 +1,2 @@
 # WpfWebView2Test
-WPFからからWebView2を通じてJavaScriptを実行する
+WPFからWebView2を通じてJavaScriptを実行する
