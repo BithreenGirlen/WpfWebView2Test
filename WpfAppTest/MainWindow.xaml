@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfAppTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTest"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+
+    </Grid>-->
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="MenuItem_Click_FileOpen"></MenuItem>
+                <MenuItem Header="Select" Click="MenuItem_Click_FileSelect"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <DockPanel DockPanel.Dock="Top">
+            <Button x:Name="ButtonGo" DockPanel.Dock="Right" Click="ButtonGo_Click" Content="Go"/>
+            <TextBox Name = "addressBar"/>
+        </DockPanel>
+        <wv2:WebView2 Name = "webView"
+                  Source = ""
+    />
+    </DockPanel>
+</Window>
